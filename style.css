@@ -3,15 +3,11 @@
   --cinza-secundario: #c0c0c0;
   --botao-azul: #167bf7;
   --cor-de-fundo:#00030C;
-
 }
+
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-}
-*{
-    margin: 0;
-    padding: 0;
 }
 
 .principal{
@@ -22,12 +18,39 @@ body{
 
 .container{
    height: 100vh;
+   display:grid ;
+   grid-template-columns: 50% 50%;
 }
 
-.container__botao {
+.container__botao{
   background-color:var(--botao-azul);
   border-radius: 5px;
   padding: 1em;
   color: var(--branco-principal);
   display:block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.botao_secundario{
+  background-color:transparent;
+  border:2px solid var(--branco-principal);
+}
+
+.container_aviso{
+  font-size: 12px;
+  color:var(--cinza-secundario);
+}
+
+.container_titulo{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container_imagem{
+  margin:1em 0 2em 0;
+}
+
+.container_caixa{
+  margin: 0 6em;
 }
